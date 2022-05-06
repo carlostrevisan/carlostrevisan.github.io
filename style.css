@@ -1,3 +1,8 @@
-body {
-  background-color: #f4f5f7;
-}
+.card {
+    @include media-breakpoint-only(lg) {
+      column-count: 4;
+    }
+    @include media-breakpoint-only(xl) {
+      column-count: 5;
+    }
+  }
