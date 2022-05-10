@@ -8,13 +8,13 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <title>Carlos Trevisan</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     <script src="jquery.js"></script>
     <script>
         $(function () {
             var includes = $('[data-include]')
             $.each(includes, function () {
                 var file = 'views/' + $(this).data('include') + '.html'
-                console.log(file)
                 $(this).load(file)
             })
         })
@@ -34,10 +34,15 @@
                 <div class="col-lg-8 col-md-6 col-12 bg-white">
                     <div class="card-body">
                         <h1 class="card-title display-6 text-center">My name is <strong>Carlos Trevisan</strong>.</h1>
-                        <h1 class="card-title display-6 fs-3 text-center">I am a future Blockchain Developer!</h1>
+                        <h1 class="card-title display-6 fs-3 text-center">I am a future Web3 Developer!</h1>
                         <p class="text-center">To know me better:</p>
                         <p class="text-center">See my projects at</p>
-                        <p class="text-center">follow me</p>
+                        <div class="d-flex justify-content-center">
+                            <a class="btn" href="mailto:carlosedutrevisan@gmail.com" target="_blank" rel="noopener noreferrer"><i class="bi bi-envelope-fill"></i></a>
+                            <a class="btn" href='http://twitter.com' target="_blank" rel="noopener noreferrer"><i class="bi bi-twitter"></i></a>
+                            <a class="btn" href="https://www.linkedin.com/in/carlos-eduardo-trevisan-b92ab118a/" target="_blank" rel="noopener noreferrer"><i class="bi bi-linkedin"></i></a>
+                            <a class="btn" href="https://www.instagram.com/carlosetrevisan/" target="_blank" rel="noopener noreferrer"><i class="bi bi-instagram"></i></a>
+                        </div>
                     </div>
                 </div>
             </div>
